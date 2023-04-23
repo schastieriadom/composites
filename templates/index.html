@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Prediction App</title>
+    </head>
+    <body>
+        <h1>Prediction App</h1>
+        <form method="POST">
+            <label for="density">Плотность, кг/м3:</label>
+            <input type="text" name="density"><br>
+
+            <label for="elasticity">Модуль упругости, ГПа:</label>
+            <input type="text" name="elasticity"><br>
+
+            <label for="hardener">Количество отвердителя, м.%:</label>
+            <input type="text" name="hardener"><br>
+
+            <label for="epoxide_content">Содержание эпоксидных групп,%:</label>
+            <input type="text" name="epoxide_content"><br>
+
+            <label for="flash_point">Температура вспышки, С:</label>
+            <input type="text" name="flash_point"><br>
+
+            <label for="surface_density">Поверхностная плотность, г/м2:</label>
+            <input type="text" name="surface_density"><br>
+
+            <label for="tensile_elasticity">Модуль упругости при растяжении, ГПа:</label>
+            <input type="text" name="tensile_elasticity"><br>
+
+            <label for="tensile_strength">Прочность при растяжении, МПа:</label>
+            <input type="text" name="tensile_strength"><br>
+
+            <label for="resin_consumption">Потребление смолы, г/м2:</label>
+            <input type="text" name="resin_consumption"><br>
+
+            <label for="winding_angle">Угол нашивки, град:</label>
+            <input type="text" name="winding_angle"><br>
+
+            <label for="winding_step">Шаг нашивки:</label>
+            <input type="text" name="winding_step"><br>
+
+            <label for="winding_density">Плотность нашивки:</label>
+            <input type="text" name="winding_density"><br>
+
+            <input type="submit" value="Predict">
+        </form>
+        <br>
+        <p>Соотношение матрица-наполнитель: {{ prediction }}</p>
+    </body>
+</html>
